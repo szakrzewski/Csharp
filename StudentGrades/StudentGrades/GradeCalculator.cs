@@ -30,25 +30,39 @@ namespace StudentGrades
         {
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("Welcome to Grade Calculator by Simon");
-            Console.WriteLine("How many students are in your class");
-            numOfStudents = int.Parse(Console.ReadLine());
-            return numOfStudents;
+
+            while (numOfStudents == 0 || numOfStudents > 100)
+            {
+                Console.WriteLine("How many students are in your class");
+                numOfStudents = int.Parse(Console.ReadLine());
+                
+                if (numOfStudents < 1 || numOfStudents > 100)
+                {
+                    Console.WriteLine("Invalid Entry");
+                    continue;
+           
+                }
+
+            }
+            return numOfStudents; 
+
         }
       
         public void UserInput()  //Asks User to enter in names and grades
         {
             for (int i = 0; i < numOfStudents; i++)   
             {
-                Console.WriteLine("Please enter student's name");
+                Console.WriteLine("Please enter Student {0}'s name", i + 1);
                 names[i] = Console.ReadLine();
                 Console.WriteLine("Please enter {0}'s grade", names[i]);
                 grades[i] = double.Parse(Console.ReadLine());
-               
             }
         }
 
         public void WriteNames()  //Displays Names and Grades to console
         {
+            Console.WriteLine("");
+            Console.WriteLine("*** Class Roster ***");
             for (int i = 0; i < numOfStudents; i++)   
             {
                 Console.Write("Name: {0} ", names[i]);
@@ -82,11 +96,22 @@ namespace StudentGrades
         public void Results() //Displays who has the highest grade, what the highest grade is, and the class average 
         {
             WriteNames();
-            Console.WriteLine("The highest grade was a {0}", highestGrade);
-            Console.WriteLine("{0} had the highest grade", highestGradeName);
+            Console.WriteLine();
+            Console.WriteLine("{0} has the highest grade which is a {1}", highestGradeName, highestGrade);
             Console.WriteLine("The class average is {0}", average);
-            Console.ReadLine();
 
+            Console.WriteLine("Type quit to exit application \nor any key to calculate a new roster");
+            string responce = Console.ReadLine();
+
+            if (responce == "quit")
+            {
+                Environment.Exit(0);
+            }
+
+            else
+            {
+                CalculateGrades();
+            }
         }
 
     }
