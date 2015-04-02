@@ -4,3 +4,9 @@ C:\Users\Simon\documents\visual studio 2013\Projects\StudentGrades\StudentGrades
 C:\Users\Simon\documents\visual studio 2013\Projects\StudentGrades\StudentGrades\obj\Debug\StudentGrades.csprojResolveAssemblyReference.cache
 C:\Users\Simon\documents\visual studio 2013\Projects\StudentGrades\StudentGrades\obj\Debug\StudentGrades.exe
 C:\Users\Simon\documents\visual studio 2013\Projects\StudentGrades\StudentGrades\obj\Debug\StudentGrades.pdb
+C:\Users\Simon\Desktop\Csharp\StudentGrades\StudentGrades\bin\Debug\StudentGrades.exe.config
+C:\Users\Simon\Desktop\Csharp\StudentGrades\StudentGrades\obj\Debug\StudentGrades.exe
+C:\Users\Simon\Desktop\Csharp\StudentGrades\StudentGrades\obj\Debug\StudentGrades.pdb
+C:\Users\Simon\Desktop\Csharp\StudentGrades\StudentGrades\bin\Debug\StudentGrades.exe
+C:\Users\Simon\Desktop\Csharp\StudentGrades\StudentGrades\bin\Debug\StudentGrades.pdb
+C:\Users\Simon\Desktop\Csharp\StudentGrades\StudentGrades\obj\Debug\StudentGrades.csprojResolveAssemblyReference.cache

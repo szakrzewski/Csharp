@@ -10,8 +10,8 @@ namespace StudentGrades
 {
     class GradeCalculator
     {
-        private double highestGrade = 0;
-        private string highestGradeName = "";
+        private double highestGrade;
+        private string highestGradeName;
         private double average;
         private int numOfStudents;
         private string[] names = new string[100];
