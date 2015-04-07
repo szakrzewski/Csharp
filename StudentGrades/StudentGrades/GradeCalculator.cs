@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Threading;
 namespace StudentGrades
 
     // A Grade Calculator which allows the user to see the class average, student with the highest score, and list all students 
@@ -14,9 +14,11 @@ namespace StudentGrades
         private string highestGradeName;
         private double average;
         private int numOfStudents;
-        private string[] names = new string[100];
-        private double[] grades = new double[100];
+        private string[] names = new string[1000];
+        private double[] grades = new double[1000];
+      
 
+        #region User Input
         public void CalculateGrades()  //function which calls all methods needed in order to run the application 
         {
             StudentCount();
@@ -26,30 +28,27 @@ namespace StudentGrades
             Results();
         }
 
-        public int StudentCount()  //Asks User to enter in the number of students
+        private void StudentCount()  //Asks User to enter in the number of students
         {
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine("Welcome to Grade Calculator by Simon");
 
-            while (numOfStudents == 0 || numOfStudents > 100)
+            while (numOfStudents < 1 || numOfStudents > 1000)
             {
-                Console.WriteLine("How many students are in your class");
-                numOfStudents = int.Parse(Console.ReadLine());
-                
-                if (numOfStudents < 1 || numOfStudents > 100)
-                {
-                    Console.WriteLine("Invalid Entry");
-                    continue;
-           
-                }
 
+                Console.WriteLine("How many students are in your class (1-1000)");
+                string responce = Console.ReadLine();
+
+                bool res = int.TryParse(responce, out numOfStudents);
+                if (res == false)
+                {
+                    Console.WriteLine("\n*This is an invalid input*\nPlease enter a number between 1-1000\n");
+                }
             }
-            return numOfStudents; 
 
         }
-      
-        public void UserInput()  //Asks User to enter in names and grades
+           
+        private void UserInput()  //Asks User to enter in names and grades
         {
+
             for (int i = 0; i < numOfStudents; i++)   
             {
                 Console.WriteLine("Please enter Student {0}'s name", i + 1);
@@ -59,19 +58,20 @@ namespace StudentGrades
             }
         }
 
-        public void WriteNames()  //Displays Names and Grades to console
+        #endregion 
+
+        private void WriteNames()  //Displays Names and Grades to console
         {
-            Console.WriteLine("");
-            Console.WriteLine("*** Class Roster ***");
+            Console.WriteLine("\n*** Class Roster ***");
             for (int i = 0; i < numOfStudents; i++)   
             {
                 Console.Write("Name: {0} ", names[i]);
-                Console.Write(" Grade: {0} ", grades[i]);
+                Console.Write(" Grade: {0}% ", grades[i]);
                 Console.WriteLine();
             }
         }
 
-        public void ClassAverage()  //Calculates the class average 
+        private void ClassAverage()  //Calculates the class average 
         {
             for (int i = 0; i < numOfStudents; i++)  
             {
@@ -81,7 +81,7 @@ namespace StudentGrades
             average /= numOfStudents;  
         }
 
-        public void HighestGrade()  //Calculates what is the highest grade in the class and which student it belongs to 
+        private void HighestGrade()  //Calculates what is the highest grade in the class and which student it belongs to 
         {
             for (int i = 0; i < numOfStudents; i++) 
             {
@@ -91,16 +91,35 @@ namespace StudentGrades
                     highestGradeName = names[i];
                 }
             }
+
+            Console.WriteLine("\nCalculating Results");
+            Thread.Sleep(3000);
         }
 
-        public void Results() //Displays who has the highest grade, what the highest grade is, and the class average 
+        public void Sort()
+        {
+            for (int i = 0; i < numOfStudents; i++)
+            {
+                double x = grades[i];
+                int j = i;
+
+
+                while (j > 0 && grades[j - 1].CompareTo(x) > 0)
+                {
+                    grades[j] = grades[j - 1];
+                    j = j - 1;
+                }
+                grades[j] = x;
+              
+            }
+        }
+
+        private void Results() //Displays who has the highest grade, what the highest grade is, and the class average 
         {
             WriteNames();
-            Console.WriteLine();
-            Console.WriteLine("{0} has the highest grade which is a {1}", highestGradeName, highestGrade);
-            Console.WriteLine("The class average is {0}", average);
-
-            Console.WriteLine("Type quit to exit application \nor any key to calculate a new roster");
+            Console.WriteLine("\n{0} has the highest grade which is a {1}%", highestGradeName, highestGrade);
+            Console.WriteLine("The class average is {0}%", average);
+            Console.WriteLine("\nType quit to exit application \nor press enter to calculate a new roster");
             string responce = Console.ReadLine();
 
             if (responce == "quit")

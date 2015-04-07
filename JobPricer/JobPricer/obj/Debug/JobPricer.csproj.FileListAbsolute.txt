@@ -1,0 +1,6 @@
+c:\users\simon\documents\visual studio 2013\Projects\JobPricer\JobPricer\bin\Debug\JobPricer.exe.config
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\JobPricer\JobPricer\bin\Debug\JobPricer.exe
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\JobPricer\JobPricer\bin\Debug\JobPricer.pdb
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\JobPricer\JobPricer\obj\Debug\JobPricer.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\JobPricer\JobPricer\obj\Debug\JobPricer.exe
+C:\Users\Simon\Documents\Visual Studio 2013\Projects\JobPricer\JobPricer\obj\Debug\JobPricer.pdb

@@ -1,0 +1,6 @@
+c:\users\simon\documents\visual studio 2013\Projects\TaxProgram\TaxProgram\bin\Debug\TaxProgram.exe.config
+C:\Users\Simon\documents\visual studio 2013\Projects\TaxProgram\TaxProgram\bin\Debug\TaxProgram.exe
+C:\Users\Simon\documents\visual studio 2013\Projects\TaxProgram\TaxProgram\bin\Debug\TaxProgram.pdb
+C:\Users\Simon\documents\visual studio 2013\Projects\TaxProgram\TaxProgram\obj\Debug\TaxProgram.csprojResolveAssemblyReference.cache
+C:\Users\Simon\documents\visual studio 2013\Projects\TaxProgram\TaxProgram\obj\Debug\TaxProgram.exe
+C:\Users\Simon\documents\visual studio 2013\Projects\TaxProgram\TaxProgram\obj\Debug\TaxProgram.pdb
