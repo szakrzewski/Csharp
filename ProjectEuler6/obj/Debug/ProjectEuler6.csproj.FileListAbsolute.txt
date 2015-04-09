@@ -1,0 +1,5 @@
+c:\users\simon\documents\visual studio 2013\Projects\ProjectEuler6\bin\Debug\ProjectEuler6.exe.config
+c:\users\simon\documents\visual studio 2013\Projects\ProjectEuler6\bin\Debug\ProjectEuler6.exe
+c:\users\simon\documents\visual studio 2013\Projects\ProjectEuler6\bin\Debug\ProjectEuler6.pdb
+c:\users\simon\documents\visual studio 2013\Projects\ProjectEuler6\obj\Debug\ProjectEuler6.exe
+c:\users\simon\documents\visual studio 2013\Projects\ProjectEuler6\obj\Debug\ProjectEuler6.pdb
