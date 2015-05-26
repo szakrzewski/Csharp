@@ -18,7 +18,7 @@ namespace WorkWithNums
 
         public Calculator()
         {
-
+            
         }
 
         public void UserInput()
@@ -41,6 +41,7 @@ namespace WorkWithNums
                 Console.WriteLine("\nEnter:\n + to Add\n - to Subtract\n * to Mulitply\n / to Divide\n");
                 choice = Console.ReadLine();
 
+                
                 //switch statement which excutes based upon user's choice 
                 switch (choice)
                 {
@@ -83,7 +84,7 @@ namespace WorkWithNums
                 Console.Write("Solve another experssion? [y/n]\n");
                 answer = Console.ReadLine();
 
-            } while (answer.ToUpper() == "Y");
+            } while (answer.ToLower() == "y");
 
         }
 
