@@ -23,12 +23,12 @@ namespace WorkWithNums
 
         public void UserInput()
         {
-            Console.WriteLine("Command Prompt Calculator\n");
+            Console.WriteLine("Command Prompt Calculator");
 
             do
             {
                 //reads first number from user
-                Console.Write("Please enter first number: ");
+                Console.Write("\nPlease enter first number: ");
                 num1 = double.Parse(Console.ReadLine());   
 
                 //reads second number from user 
@@ -45,27 +45,33 @@ namespace WorkWithNums
                 //if statment excutes based upon user's choice
                 if (choice == "+")
                 {
+                    //Add
                     double sum = Add(num1, num2);
                     Console.WriteLine("{0} + {1} = {2}", num1, num2, sum);
                 }
 
                 if (choice == "-")
                 {
+                    //Substract
                     double sum = Subtract(num1, num2);
                     Console.WriteLine("{0} - {1} = {2}", num1, num2, sum);
                 }
 
                 if (choice == "*")
                 {
+                    //Multiply
                     double sum = Multiply(num1, num2);
                     Console.WriteLine("{0} * {1} = {2}", num1, num2, sum);
                 }
 
                 if (choice == "/")
                 {
+                    //Divide
                     sum = Divide(num1, num2);
                     Console.WriteLine("{0} / {1} = {2}", num1, num2, sum);
                 }
+
+                //Ask user if they would like to solve again 
                 Console.Write("Solve another experssion? [y/n]\n");
                 answer = Console.ReadLine();
 

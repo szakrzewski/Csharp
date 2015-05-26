@@ -8,3 +8,6 @@
 \\psf\Home\Desktop\Csharp\WorkWithNums\bin\Debug\WorkWithNums.exe.config
 \\psf\Home\Desktop\Csharp\WorkWithNums\obj\Debug\WorkWithNums.exe
 \\psf\Home\Desktop\Csharp\WorkWithNums\obj\Debug\WorkWithNums.pdb
+\\psf\Home\Desktop\Csharp\WorkWithNums\bin\Debug\WorkWithNums.exe
+\\psf\Home\Desktop\Csharp\WorkWithNums\bin\Debug\WorkWithNums.pdb
+\\psf\Home\Desktop\Csharp\WorkWithNums\obj\Debug\WorkWithNums.csprojResolveAssemblyReference.cache
