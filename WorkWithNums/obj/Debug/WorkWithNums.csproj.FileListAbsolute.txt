@@ -5,3 +5,6 @@
 \\psf\home\documents\visual studio 2013\Projects\WorkWithNums\obj\Debug\WorkWithNums.pdb
 \\psf\home\documents\visual studio 2013\Projects\WorkWithNums\bin\Debug\WorkWithNums.exe.CodeAnalysisLog.xml
 \\psf\home\documents\visual studio 2013\Projects\WorkWithNums\bin\Debug\WorkWithNums.exe.lastcodeanalysissucceeded
+\\psf\Home\Desktop\Csharp\WorkWithNums\bin\Debug\WorkWithNums.exe.config
+\\psf\Home\Desktop\Csharp\WorkWithNums\obj\Debug\WorkWithNums.exe
+\\psf\Home\Desktop\Csharp\WorkWithNums\obj\Debug\WorkWithNums.pdb

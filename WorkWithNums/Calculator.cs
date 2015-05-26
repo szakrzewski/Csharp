@@ -8,6 +8,8 @@ namespace WorkWithNums
 {
     class Calculator
     {
+        //Calculator object that takes in two numbers and then adds, subtracts, multiplies, or divides
+
         private double num1 { get; set; }
         private double num2 { get; set; }
         private double sum { get; set; }
@@ -25,20 +27,22 @@ namespace WorkWithNums
 
             do
             {
-
+                //reads first number from user
                 Console.Write("Please enter first number: ");
-                num1 = double.Parse(Console.ReadLine());
+                num1 = double.Parse(Console.ReadLine());   
 
+                //reads second number from user 
                 Console.Write("Please enter second number: ");
-                num2 = double.Parse(Console.ReadLine());
+                num2 = double.Parse(Console.ReadLine());    
 
-                Console.WriteLine("\nNumbers are: {0} and {1}", num1, num2);
+                //displays back numbers to users
+                Console.WriteLine("\nNumbers are: {0} and {1}", num1, num2);  
 
                 Console.WriteLine("\nEnter:\n + to Add\n - to Subtract\n * to Mulitply\n / to Divide\n");
                 choice = Console.ReadLine();
 
 
-
+                //if statment excutes based upon user's choice
                 if (choice == "+")
                 {
                     double sum = Add(num1, num2);
@@ -71,24 +75,28 @@ namespace WorkWithNums
 
         private double Add(double num1, double num2)
         {
+            //add user's numbers 
             double sum = num1 + num2;
             return sum;
         }
 
         private double Subtract(double num1, double num2)
         {
+            //subtract user's numbers
             double sum = num1 - num2;
             return sum;
         }
 
         private double Multiply(double num1, double num2)
         {
+            //multiply user's numbers
             double sum = num1 * num2;
             return sum;
         }
 
         private double Divide(double num1, double num2)
         {
+            //divide user's numbers 
             double sum = num1 / num2;
             return sum;
         }
