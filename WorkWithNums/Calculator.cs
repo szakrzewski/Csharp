@@ -41,34 +41,42 @@ namespace WorkWithNums
                 Console.WriteLine("\nEnter:\n + to Add\n - to Subtract\n * to Mulitply\n / to Divide\n");
                 choice = Console.ReadLine();
 
-
-                //if statment excutes based upon user's choice
-                if (choice == "+")
+                //switch statement which excutes based upon user's choice 
+                switch (choice)
                 {
+
+                 case "+":
+                 {
                     //Add
                     double sum = Add(num1, num2);
                     Console.WriteLine("{0} + {1} = {2}", num1, num2, sum);
-                }
-
-                if (choice == "-")
+                    break;
+                 } 
+                
+                case "-":
                 {
                     //Substract
                     double sum = Subtract(num1, num2);
                     Console.WriteLine("{0} - {1} = {2}", num1, num2, sum);
+                    break;
                 }
 
-                if (choice == "*")
+                case "*":
                 {
                     //Multiply
                     double sum = Multiply(num1, num2);
                     Console.WriteLine("{0} * {1} = {2}", num1, num2, sum);
+                    break;
                 }
 
-                if (choice == "/")
+                case "/":
                 {
                     //Divide
                     sum = Divide(num1, num2);
                     Console.WriteLine("{0} / {1} = {2}", num1, num2, sum);
+                    break;
+                }
+
                 }
 
                 //Ask user if they would like to solve again 
